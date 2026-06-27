@@ -1,0 +1,344 @@
+*{
+box-sizing:border-box;
+}
+body{
+font-size:16px;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.4em; 
+background: #F8F7FF; /* fondo general lavanda muy claro */
+color: #2D2D2D;
+margin: 0;
+}
+
+.contenedor{
+    width: 980px;
+    margin: 0 auto;
+}
+
+.encabezado{ 
+background: #4A4458; /* morado gris oscuro */
+overflow: hidden;
+}
+.logo{
+    float: left;
+   position: relative;
+    top: 15px; 
+}
+.logo img{
+    width: 100px;  /* Más pequeño */
+    border-radius: 50%;
+}
+.encabezado nav{ 
+float: right; 
+}
+.encabezado nav ul{ 
+margin: 0;
+padding: 0;
+list-style: none;
+}
+.encabezado nav ul li{ 
+display: inline-block;
+margin-right: -4px;
+}
+.encabezado nav ul li a{ 
+display: block;
+color: #fff;
+padding: 28px;
+border-left: 1px solid #6B6278;
+text-decoration: none;
+}
+/*cambio de color*/
+.encabezado nav ul li a:hover{ 
+background: #6B6278; /* morado medio */
+}
+/*------------------------------------
+PRESENTACION
+-------------------------------------*/ 
+.presentacion{
+  background: radial-gradient(280px at 25% 10%, #C5B4E3, #7A6E9F);
+  overflow: hidden;
+  border-bottom: 3px solid #4A4458; 
+  padding: 40px 0; /* agrega padding para que no pegue arriba/abajo */
+}  
+.introduccion-presentacion{
+    float: left;
+    width: 55%; /* clave 1: dale ancho para que la img quepa a la derecha */
+}
+.introduccion-presentacion h1{
+    color: #fff;
+    font-size: 2.625em;
+    text-shadow: 2px 2px 0px #4A4458;
+    text-align: center;
+    margin-top: 20px; /* baja el margin-top */
+    margin-bottom: 40px;
+    margin-left: 20px;
+    line-height: 0.7em;
+} 
+.introduccion-presentacion h1 span{
+    color: #FFE5D9;
+    font-size: 0.38em;
+}
+.presentacion img{
+    float: right;
+    width: 40%; /* clave 2: tamaño adecuado */
+    max-width: 380px; /* que no se haga gigante */
+    position: relative;
+    top: 0; /* quita el top: 30px que tenías */
+    border-radius: 10px; /* se ve mejor */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* sombrita opcional */
+}
+/*------------aprender------------mas*/
+a.aprender-mas{
+    font-size: 2.1875em;
+    border: 1px solid #D95D39; /* coral oscuro */
+    padding: 30px 50px;
+    display: block;
+    text-align: center;
+    margin: 10px 40px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 3px 7px 0 #4A4458;
+    border-radius: 10px;
+    background: linear-gradient(to top, #FF8C61, #D95D39); /* degradado coral */
+    box-shadow: 0 8px 0 0 #B8482A,
+                0 0 25px 5px #fff;
+} 
+a.aprender-mas:hover{
+    box-shadow: 0 0 25px 5px #4A4458;
+}
+.presentacion img{
+    float: right;
+    position: relative;
+    top: 30px;
+}
+/*****************************************************************
+/*------------Acceso-rapido------------*/
+.acceso-rapido{
+    background: #7A6E9F; /* lavanda medio */
+    overflow: hidden;
+    border-bottom: 3px solid #fff;
+}
+.acceso-rapido h2 {
+    color: #fff;
+    font-size: 1.87em;
+    text-shadow: 1px 1px 0 #4A4458;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 16px;
+}
+.acceso-rapido figure{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    margin: 0 -4px 0 0;
+    padding: 0px;
+}
+.acceso-rapido h3{
+   font-size: 1.1875em;
+    margin-top: 9px;
+    margin-bottom: 20px; 
+}
+.acceso-rapido h3 a{
+    color: #fff;
+    text-shadow: 1px 1px 0 #4A4458;
+    font-weight: normal;
+}
+.acceso-rapido h3 a:hover{
+    text-decoration: none;
+    color: #FFE5D9;
+}
+.acceso-rapido img{
+    width:90px;
+    border-radius:50%;
+}
+/*---------bloque contenido----------*/
+.bloque-contenido{
+    overflow: hidden;
+    margin-top: 25px;
+}
+.bloque-contenido .contenedor{
+    display: table;
+}
+.articulos {
+    background: #FFFFFF;
+    width: 65%;
+  display: table-cell;
+  padding-right: 30px;
+}
+.articulos article{
+    margin-bottom: 10px;
+}
+.articulos h2{
+    color: #4A4458;
+    font-size: 1.625em;
+    border-bottom: 3px solid #7A6E9F;
+    padding-bottom: 25px;
+}
+.articulos img{
+    float: left;
+    width: 250px;  /* tamaño fijo adecuado */
+    height: 170px; /* alto fijo para que todas queden iguales */
+    margin-right: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 5px;
+    border-radius: 8px;
+    object-fit: cover; /* clave: recorta la imagen sin deformarla */
+}
+.articulos article h1{
+    font-size: 1.25em;
+    margin: 8px 0 8px 0;
+}
+.articulos article h1 a{
+    color: #D95D39; /* coral para títulos de artículos */
+    text-decoration: none;
+}
+.articulos article h1 a:hover{
+    text-decoration: underline;
+}
+.articulos article p{
+    margin: 0;
+    text-align: justify;
+    font-size: 0.875em;
+    color: #2D2D2D;
+}
+.complementario{
+    background: #7A6E9F; /* lavanda medio */
+    width: 35%; 
+    display: table-cell; 
+    padding: 0 20px 20px;
+}
+.complementario h2{
+    font-size: 1.625em;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+}
+.complementario ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.complementario ul li{
+    background: url("imagen/icon.png") no-repeat left center;
+    padding-left: 24px;
+    margin-bottom: 8px;
+}
+.complementario ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.complementario ul li a:hover{
+    color: #FFE5D9; /* coral claro */
+    text-decoration: underline;
+}
+/***********************************************************************/
+/************** suscripcion */
+.suscripcion{
+    overflow: hidden;
+    background: #E8E3F5;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.suscripcion .contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* por si no cabe en móvil */
+}
+
+.suscripcion .texto-suscripcion{
+    flex: 1;
+}
+
+.suscripcion h2{
+    float: none;
+    font-size: 1.4em;
+    color: #4A4458;
+    font-weight: normal;
+    margin: 0 0 5px 0;
+}
+
+.suscripcion p{
+    margin: 0;
+    color: #4A4458;
+    font-size: 0.9em;
+}
+
+.suscripcion form{
+    float: none;
+    position: static;
+    display: flex;
+    gap: 10px;
+}
+
+.suscripcion form input{
+    border: 1px solid #C5B4E3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.suscripcion form input[type="submit"]{
+    border: 1px solid #D95D39;
+    padding: 10px 20px;
+    background: #FF8C61;
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+}
+/***********pie de pagina**************/
+.piedepagina{
+    background: #4A4458;
+    padding: 3px 0; /* antes tenías 20px 0, bájalo a 12px */
+}
+.piedepagina .contenedor{
+    display: table;
+}
+.piedepagina small{
+    display: table-cell;
+    color: #fff;
+}
+.piedepagina nav{
+    display: table-cell;
+    text-align: right;
+}
+.piedepagina nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.piedepagina nav ul li{
+    display: inline-block;
+    padding-left: 10px;
+}
+.piedepagina nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.piedepagina nav ul li a:hover{
+    color: #FFE5D9;
+    text-decoration: underline;
+}
+/* REDES SOCIALES */
+
+.social{
+    position:fixed;
+    right:0;
+    top:35%;
+}
+
+.social a{
+    display:block;
+    margin-bottom:5px;
+}
+
+.social img{
+    width:50px;
+    border-radius:50%;
+    box-shadow:0 0 8px rgba(0,0,0,.2);
+}
+.articulos article h1 a{
+    color:red !important;
+    text-decoration:none;
+}
